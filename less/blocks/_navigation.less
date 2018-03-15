@@ -1,0 +1,65 @@
+.logo-holder {
+width: 220px;
+// background-color:red;
+padding-top: 40px;
+padding-bottom: 40px;
+
+//mobile
+@media (max-width:940px){
+    width: 100%;
+   text-align: center;
+    }
+}
+
+.navigation-holder {
+// background-color: gold;
+width: 700px;
+height: 30px;
+padding-top: 45px;
+padding-bottom: 45px;
+margin-bottom: 25px;
+
+    @media (max-width: 940px) {
+        display: none;
+    }
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+list-style-type: none;
+display: flex;
+flex-direction: row; //направление в ряд
+justify-content: flex-end; //выравнивание по концу контейнера
+text-transform: uppercase;
+}
+
+.navigation-list__list-item {
+padding-left: 30px;
+    a {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        color: #777777;
+        text-decoration: none;
+        transition: 0.3s ease-out;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(124, 197, 118, 0);
+
+        &:hover, &:focus, &:active {
+            color: #7cc576;
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 1px solid rgba(124, 197, 118, 0.7);
+            outline: none
+        }
+
+        &:active {
+            color: #F7941D;
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #F7941D;
+        }
+    }
+}
+

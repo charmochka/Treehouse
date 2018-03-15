@@ -1,0 +1,49 @@
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+
+//mobile
+    @media (max-width:940px){
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.container-fluid {
+    width: 100%;
+    
+}
+
+.row {
+    // margin-left: 250px;
+    // margin-right: 250px;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width:940px){
+        flex-direction: column;
+        
+    }
+}
+
+
+.container-padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+.col-1-of-3 {
+ 
+    width: 33%;
+
+     @media (max-width:940px){
+        width: 100%;
+        
+    }
+}
+
+.col-1-of-2 {
+    width: 50%;
+}
